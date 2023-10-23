@@ -1,0 +1,1 @@
+type MyIntersection = A & B;
