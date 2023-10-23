@@ -1,0 +1,1 @@
+type stringOrNumber = string | number;

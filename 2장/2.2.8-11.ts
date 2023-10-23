@@ -1,0 +1,3 @@
+function email({ person, subject, body }) {
+  // ...
+}

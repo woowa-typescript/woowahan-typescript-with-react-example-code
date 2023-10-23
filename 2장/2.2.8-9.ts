@@ -1,0 +1,3 @@
+function postTIL(author: Developer, date: Date, content: string): Response {
+  // ...
+}

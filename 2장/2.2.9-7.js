@@ -1,0 +1,1 @@
+new (name: string, sleepingTime: number): Developer
