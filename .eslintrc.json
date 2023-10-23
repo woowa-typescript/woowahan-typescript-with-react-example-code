@@ -1,0 +1,48 @@
+{
+  "env" : {
+    "browser": true
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "quotes": ["error", "double"],
+    "comma-dangle": "off",
+    "camelcase": "off",
+    "no-console": "off",
+    "no-unused-expressions": "off",
+    "no-underscore-dangle": "off",
+    "max-classes-per-file": "off",
+    "remove-unused-variable": "off",
+    "no-restricted-syntax": "off",
+    "func-names": "off",
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "prefer-const": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "arrow-body-style": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
