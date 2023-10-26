@@ -1,5 +1,5 @@
 {
-  "env" : {
+  "env": {
     "browser": true
   },
   "plugins": ["@typescript-eslint", "prettier"],
@@ -36,7 +36,9 @@
         "js": "never",
         "ts": "never"
       }
-    ]
+    ],
+    "prefer-destructuring": "off",
+    "dot-notation": "off"
   },
   "settings": {
     "import/resolver": {
