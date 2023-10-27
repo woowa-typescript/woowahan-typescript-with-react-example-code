@@ -1,18 +1,18 @@
 import axios, { AxiosInstance, AxiosPromise } from "axios";
 
-type FetchCartResponse = unknown;
-type PostCartRequest = unknown;
-type PostCartResponse = unknown;
+export type FetchCartResponse = unknown;
+export type PostCartRequest = unknown;
+export type PostCartResponse = unknown;
 
-const apiRequester: AxiosInstance = axios.create({
+export const apiRequester: AxiosInstance = axios.create({
   baseURL: "https://api.baemin.com",
   timeout: 5000,
 });
 
-const fetchCart = (): AxiosPromise<FetchCartResponse> =>
+export const fetchCart = (): AxiosPromise<FetchCartResponse> =>
   apiRequester.get<FetchCartResponse>("cart");
 
-const postCart = (
+export const postCart = (
   postCartRequest: PostCartRequest
 ): AxiosPromise<PostCartResponse> =>
   apiRequester.post<PostCartResponse>("cart", postCartRequest);
