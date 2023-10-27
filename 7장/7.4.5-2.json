@@ -1,0 +1,8 @@
+// package.json
+
+{
+  "scripts": {
+    "start:mock": "REACT_APP_MOCK=true npm run start",
+    "start": "REACT_APP_MOCK=false npm run start"
+  }
+}
