@@ -1,0 +1,3 @@
+const HrComponent = styled.hr<Pick<Props, "height" | "color" | "isFull">>`
+  // ...
+`;
