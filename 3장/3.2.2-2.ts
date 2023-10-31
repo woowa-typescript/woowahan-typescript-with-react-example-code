@@ -1,0 +1,1 @@
+type PromotionEventItem = ProductItem | CardItem;

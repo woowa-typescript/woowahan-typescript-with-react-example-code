@@ -1,0 +1,3 @@
+type ReturnType<T = any> = {
+  // ...
+};
