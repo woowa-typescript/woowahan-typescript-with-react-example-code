@@ -1,0 +1,1 @@
+type UnpackPromise<T> = T extends Promise<infer K>[] ? K : any;

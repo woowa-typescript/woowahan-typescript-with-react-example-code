@@ -1,0 +1,1 @@
+type PermissionNames = '기기 정보 관리' | '안전모 인증 관리' | '운행 여부 조회';
