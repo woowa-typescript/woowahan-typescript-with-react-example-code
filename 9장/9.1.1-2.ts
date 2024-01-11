@@ -20,7 +20,7 @@ const MemberList = () => {
       ...memberList,
       {
         name: "DokgoBaedal",
-        age: 11,
+        agee: 11,
       },
     ]);
   };
