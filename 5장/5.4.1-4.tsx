@@ -26,9 +26,9 @@ const theme = {
   },
 };
 
-type ColorType = typeof keyof theme.colors;
-type BackgroundColorType = typeof keyof theme.backgroundColor;
-type FontSizeType = typeof keyof theme.fontSize;
+type ColorType = keyof typeof theme.colors;
+type BackgroundColorType = keyof typeof theme.backgroundColor;
+type FontSizeType = keyof typeof theme.fontSize;
 
 interface Props {
   color?: ColorType;
