@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 const colors = {
@@ -13,7 +13,7 @@ const theme = {
     default: colors.gray,
     ...colors
   },
-  backgroundColor: {
+  backgroundColors: {
     default: colors.white,
     gray: colors.gray,
     mint: colors.mint,
@@ -27,13 +27,14 @@ const theme = {
 };
 
 type ColorType = keyof typeof theme.colors;
-type BackgroundColorType = keyof typeof theme.backgroundColor;
+type BackgroundColorType = keyof typeof theme.backgroundColors;
 type FontSizeType = keyof typeof theme.fontSize;
 
 interface Props {
   color?: ColorType;
   backgroundColor?: BackgroundColorType;
   fontSize?: FontSizeType;
+  children?: React.ReactNode;
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void | Promise<void>;
 }
 
@@ -50,8 +51,8 @@ const Button: FC<Props> = ({ fontSize, backgroundColor, color, children }) => {
 };
 
 const ButtonWrap = styled.button<Omit<Props, "onClick">>`
-  color: ${({ color }) => theme.color[color ?? "default"]};
+  color: ${({ color }) => theme.colors[color ?? "default"]};
   background-color: ${({ backgroundColor }) =>
-    theme.bgColor[backgroundColor ?? "default"]};
+    theme.backgroundColors[backgroundColor ?? "default"]};
   font-size: ${({ fontSize }) => theme.fontSize[fontSize ?? "default"]};
 `;
