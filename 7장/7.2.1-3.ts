@@ -24,9 +24,9 @@ class Store {
     this.state = "PENDING";
     this.errorMsg = "";
     try {
-      const projects = await fetchJobList();
+      const jobs = await fetchJobs();
       runInAction(() => {
-        this.projects = projects;
+        this.job = jobs;
         this.state = "DONE";
       });
     } catch (e) {
