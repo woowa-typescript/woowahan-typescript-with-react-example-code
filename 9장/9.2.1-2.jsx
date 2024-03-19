@@ -4,9 +4,9 @@ const MyComponent = () => {
   return (
     <div>
       <h1>{value}</h1>
-      <input onChange= {onChange} value= {text} />
+      <input onChange= {onChange} value= {value} />
     </div>
   );
 };
 
-export default App;
+export default MyComponent;
