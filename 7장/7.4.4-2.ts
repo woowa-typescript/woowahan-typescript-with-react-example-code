@@ -12,12 +12,12 @@ export const lazyData = (
 
 export const fetchOrderListMock = ({
   status = 200,
-  time = 100,
+  delay = 100,
   use = true,
 }: MockResult) =>
   use &&
   mock
     .onGet(/\/order\/list/)
     .reply(() =>
-      lazyData(status, fetchOrderListSuccessResponse, undefined, time)
+      lazyData(status, fetchOrderListSuccessResponse, undefined, delay)
     );
